@@ -190,3 +190,5 @@ Kubernetes tracks it, schedules it, and networks it exactly the same as any stan
 * **Risk:** The application shares the Guest OS kernel only with other containers in the *same Pod*. If the application exploits the Guest kernel, it only compromises that single isolated VM. It cannot touch the Host OS kernel or any other VMs on the server.
 
 Both use namespaces to create the "container environment," but Kata puts an impenetrable hardware wall (the VM) *around* those namespaces.
+
+
